@@ -1,0 +1,202 @@
+.w {
+    width: 900px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    color: #fff;
+    font-family: Microsoft YaHei, SimSun;
+    background: #fff;
+    background: rgba( 255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 11px);
+    -webkit-backdrop-filter: blur( 11px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: red;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* header样式start */
+
+header {
+    z-index: -20;
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+    background: rgba(255, 38, 38, 0.5);
+}
+
+header>ul>.words>a,
+header>.nav>ul>li>a {
+    color: #000;
+    font-family: 黑体;
+}
+
+
+/* 头部logo样式start */
+
+header>.logo {
+    height: 68px;
+}
+
+header>.logo>.photo,
+header>.logo>li>a>img {
+    width: 101px;
+    height: 68px;
+}
+
+header>.logo>.words {
+    height: 68px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 68px;
+    text-indent: 5px;
+    font-weight: bold;
+}
+
+
+/* 头部logo样式end */
+
+
+/* 头部导航样式start */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+}
+
+.nav>ul {
+    width: 620px;
+    height: 68px;
+    position: relative;
+    display: flex;
+}
+
+.nav>ul>li {
+    width: 124px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.nav>ul>li>a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.slider {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(131, 0, 0);
+    border-radius: 4px;
+    position: absolute;
+    left: 32px;
+    top: 16px;
+    z-index: -1;
+    transition: all ease 0.4s;
+    animation: 2s ease-in-out waves infinite;
+}
+
+.nav>ul>li:nth-child(1) {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+}
+
+.nav>ul>li:nth-child(2) {
+    position: absolute;
+    left: 128px;
+    top: 16px;
+}
+
+.nav>ul>li:nth-child(3) {
+    position: absolute;
+    top: 16px;
+    left: 248px;
+}
+
+.nav>ul>li:nth-child(4) {
+    position: absolute;
+    left: 372px;
+    top: 16px;
+}
+
+.nav>ul>li:nth-child(5) {
+    left: 496px;
+    top: 16px;
+    position: absolute;
+}
+
+.nav>ul>li:nth-child(1):hover~.slider {
+    left: 32px;
+    top: 16px;
+}
+
+.nav>ul>li:nth-child(2):hover~.slider {
+    left: 138px;
+}
+
+.nav>ul>li:nth-child(3):hover~.slider {
+    left: 260px;
+}
+
+.nav>ul>li:nth-child(4):hover~.slider {
+    left: 384px;
+}
+
+.nav>ul>li:nth-child(5):hover~.slider {
+    left: 504px;
+}
+
+@keyframes waves {
+    from {
+        clip-path: polygon( 0% 17%, 9% 10%, 18% 4%, 30% 0%, 43% 1%, 49% 4%, 57% 7%, 66% 10%, 78% 11%, 89% 11%, 96% 9%, 100% 7%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon( 0% 4%, 6% 9%, 13% 13%, 23% 15%, 31% 16%, 42% 15%, 49% 13%, 61% 10%, 71% 5%, 81% 3%, 90% 2%, 100% 5%, 100% 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon( 0% 17%, 9% 10%, 18% 4%, 30% 0%, 43% 1%, 49% 4%, 57% 7%, 66% 10%, 78% 11%, 89% 11%, 96% 9%, 100% 7%, 100% 100%, 0% 100%);
+    }
+}
+
+
+/* 头部导航样式end */
+
+
+/* header样式end */

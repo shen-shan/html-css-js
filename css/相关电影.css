@@ -1,0 +1,343 @@
+.slider {
+    left: 504px;
+}
+
+.background1,
+.background2,
+.content {
+    height: 100vh;
+    background-color: #2f3542;
+}
+
+.background1 {
+    background-image: url(../imag/hb.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.background2 {
+    background-image: url(../imag/bh.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content {
+    position: relative;
+}
+
+.content h2,
+.content p {
+    width: 40vw;
+    height: 30vh;
+    position: absolute;
+}
+
+.content img {
+    width: 40vw;
+    height: 80vh;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color: rgb(230, 11, 11);
+}
+
+.content h2 {
+    right: 50px;
+    top: 50px;
+    background-color: rgb(235, 207, 207);
+}
+
+.content p {
+    right: 25px;
+    bottom: 20px;
+    background-color: rgb(138, 73, 73);
+}
+
+
+/* cube start */
+
+.cube {
+    position: absolute;
+    top: 95px;
+    left: 76px;
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate-cube 13s ease-in-out infinite;
+}
+
+.cube>div {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+    position: absolute;
+    box-shadow: inset 0 0 4px 2px rgba(106, 106, 106, 0.4);
+}
+
+.cube .img1 {
+    background-image: url("../imag/qqq.webp");
+    transform: rotateY(0deg) translateZ(125px);
+}
+
+.cube .img2 {
+    background-image: url("../imag/ww.webp");
+    transform: rotateY(90deg) translateZ(125px);
+}
+
+.cube .img3 {
+    background-image: url("../imag/ee.webp");
+    transform: rotateY(-90deg) translateZ(125px);
+}
+
+.cube .img4 {
+    background-image: url("../imag/rr.webp");
+    transform: rotateX(90deg) translateZ(125px);
+}
+
+.cube .img5 {
+    background-image: url("../imag/tt.webp");
+    transform: rotateX(-90deg) translateZ(125px);
+}
+
+.cube .img6 {
+    background-image: url("../imag/yy.webp");
+    transform: rotateY(180deg) translateZ(125px);
+}
+
+
+/* 前 */
+
+.cube .imga1 {
+    background-image: url("../imag/lll.webp");
+    transform: rotateY(0deg) translateZ(125px);
+}
+
+
+/* 右 */
+
+.cube .imga2 {
+    background-image: url("../imag/kkk.webp");
+    transform: rotateY(90deg) translateZ(125px);
+}
+
+
+/* 左 */
+
+.cube .imga3 {
+    background-image: url("../imag/jjj.webp");
+    transform: rotateY(-90deg) translateZ(125px);
+}
+
+
+/* 下 */
+
+.cube .imga4 {
+    background-image: url("../imag/hhh.webp");
+    transform: rotateX(90deg) translateZ(125px);
+}
+
+
+/* 上 */
+
+.cube .imga5 {
+    background-image: url("../imag/ggg.webp");
+    transform: rotateX(-90deg) translateZ(125px);
+}
+
+
+/* 后 */
+
+.cube .imga6 {
+    background-image: url("../imag/fff.webp");
+    transform: rotateY(180deg) translateZ(125px);
+}
+
+@keyframes rotate-cube {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    20% {
+        /* 右边图片 */
+        transform: rotateY(-90deg);
+    }
+    40% {
+        /* 上 */
+        transform: rotateX(-90deg);
+    }
+    60% {
+        /* 左 */
+        transform: rotateY(90deg);
+    }
+    80% {
+        /* 下 */
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+}
+
+
+/* cube end */
+
+
+/* 演员介绍start */
+
+.out {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1101px;
+    height: 152px;
+    background-color: black;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.jiaopiana {
+    width: 3040px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+.jiaopianb {
+    width: 3040px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+}
+
+.jiaopiana>li,
+.jiaopianb>li {
+    width: 13px;
+    height: 10px;
+    background-color: #fff;
+}
+
+.people>li>img,
+.people>li>img {
+    height: 92px;
+    width: 73px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.people>li>p,
+.people>li>p {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 59px;
+    height: 92px;
+    background-color: rgb(100, 73, 73);
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.people {
+    position: relative;
+    width: 3040px;
+    height: 152px;
+    background-color: black;
+    animation: move 23s linear infinite;
+    animation-direction: normal;
+}
+
+.people>li {
+    position: relative;
+    display: flex;
+    margin-top: 33px !important;
+    margin: 14px;
+    float: left;
+    width: 132px;
+    height: 92px;
+    background-color: rgb(231, 14, 14);
+}
+
+.cube:hover {
+    animation-play-state: paused;
+}
+
+.people:hover {
+    animation-play-state: paused;
+}
+
+@keyframes move {
+    to {
+        transform: translateX(-1920px);
+    }
+}
+
+
+/* 演员介绍end */
+
+
+/* 相关信息start*/
+
+.inf {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 405px;
+    width: 696px;
+    background-color: rgb(196, 37, 37);
+}
+
+.inf>.l {
+    width: 303px;
+    height: 405px;
+    background-color: rgb(136, 38, 38);
+}
+
+.inf>.l>a>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 303px;
+    height: 405px;
+}
+
+.inf>.r {
+    width: 393px;
+    height: 405px;
+    background-color: #2f3542;
+}
+
+.inf>.r>.u {
+    width: 393px;
+    height: 72px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+}
+
+.inf>.r>.d {
+    width: 393px;
+    height: 333px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-indent: 2em;
+    padding: 25px 10px;
+}
+
+
+/* 相关信息end*/

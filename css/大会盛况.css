@@ -1,0 +1,77 @@
+.slider {
+    left: 138px;
+}
+
+h1 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    color: #000;
+    font-family: 黑体;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.pa .ula {
+    height: 120px;
+    justify-content: space-around;
+}
+
+.pa .ulb {
+    justify-content: space-around;
+    border-bottom: 1px solid #000;
+}
+
+.pa .ula li,
+.pa .ula li img {
+    width: 180px;
+    height: 120px;
+}
+
+.pa .ulb li {
+    width: 180px;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-family: 宋体;
+}
+
+.pa .ulb li a {
+    color: #000;
+}
+
+.pb .photo,
+.pb .para {
+    margin: 0 auto;
+    width: 900px;
+}
+
+.pb img {
+    width: 900px;
+}
+
+.pb p {
+    line-height: 60px;
+    color: #000;
+    margin-left: 40px;
+}
+
+.line {
+    width: 900px;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 10px;
+}
+
+.pc h1 {
+    height: 644.5px;
+    margin: 0 auto;
+}
+
+.pc article {
+    color: #000;
+    border: 1px solid #000;
+    padding: 20px;
+    border-top: 0;
+}
